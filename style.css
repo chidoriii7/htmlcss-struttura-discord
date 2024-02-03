@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, ol, menu {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+.debug .topside {
+    background-color: aqua;
+    padding: 20px 0px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.debug .container,
+.debug .pinkcontainer,
+.debug .col-33 .col-66, 
+.debug .bigcontainer {   /* riquadro unico */
+    padding: 4px;
+    border: 1px solid red;
+}
+
+.debug .row,
+.debug .pinkcontainer, 
+.debug .col-33 .col-66,
+.debug .bigcontainer > * {   /* riquadro x sezioni */
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.debug section {
+    padding: 32px 0px;
+}
+
+
+/*utility*/
+
+
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.pinkcontainer {
+    max-width: 700px;
+    margin: 0 auto;
+
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+}
+
+ .central-content {
+    background-color: blue;
+    padding: 30px;
+}
+
+.central-content .pinkcontainer {
+    min-height: 400px;
+}
+
+.col-33 {
+    width: calc(100% / 3);
+    height: 200px;
+}
+
+.col-66 {
+    width: calc(2 * 100% / 3);
+    height: 200px;
+}
+
+.gray {
+    background-color: lightgray;
+}
+
+.container .bigcontainer {
+    min-height: 600px;
+}
+
+.bottomside {
+    background-color: darkslategray;
+    padding: 20px 0px;
+    color: white;
+}
+
+.col {}
+
+
+
+
